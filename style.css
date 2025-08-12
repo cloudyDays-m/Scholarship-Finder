@@ -1,0 +1,21 @@
+html, body {
+
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    overflow: hidden;
+    background-attachment: fixed;
+
+}
+
+.bg-full {
+
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
