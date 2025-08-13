@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<!--Used AI to debug unclosed <div tags-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title> Scholarship Finder</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cinzel:wght@400..900&family=Raleway:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.mobiscroll.com/5.31.0/css/mobiscroll.min.css">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <script src="script.js"></script>
+
+  <div class="bgimg">
+    <img src="images/backgroundImage.jpg" alt="Background image" class="bg-full">
+
+  </div>
+<!--Question 1 -->
+  <div>
+    <h1 class="title"> Scholarship Matcher
+    </h1> 
+    <h3> Find the perfect scholarship so you can get into your dream college </h3>
+    <div class="form-container">
+      <div class="question-container">
+        <div class="questions-text"> What subject do you want to study? </div>
+        <select class="dropdown" id = 'q1'>
+          <option value=""> Select an option from below </option>
+          <option value="engineering"> Engineering </option>
+          <option value="art"> Art, Music Or Sport </option>  
+          <option value="maths"> Maths OR Natural Sciences (Physics, Chem) </option>
+          <option value="medicine"> Medicine </option>
+          <option value="law"> Law, Economics or any other Social Sciences </option>
+        
+        </select>
+      </div>
+
+      <!--Question 2 -->
+<div class="question-container">
+        <div class="questions-text">Which country are you from?</div>
+        <div class="dropdown" id="q2">
+          <label class="mbsc-label">
+            Countries
+            <input mbsc-input id="demo-country-picker"
+                   data-dropdown="true"
+                   data-input-style="box"
+                   data-label-style="stacked"
+                   placeholder="Please Select..." />
+          </label>
+        </div>
+
+      <!--Question 3-->
+        <div>
+    <div class="form-container">
+      <div class="question-container">
+        <div class="questions-text"> What is the reason you're getting the scholarship for? </div>
+        <select class="dropdown" id = 'q3'>
+          <option value=""> Select an option from below </option>
+          <option value="study"> Study </option>
+          <option value="teaching"> Teaching </option>  
+        
+        </select>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>
