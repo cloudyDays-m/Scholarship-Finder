@@ -1,37 +1,43 @@
-// use the mobiscroll API and set global Mobiscroll options 
-// used AI to fix the loop applied when getting data from MobiScroll
+const API_KEY = '6c2fb373e98ce077054f9bc9bceb7368'; 
 
-mobiscroll.setOptions({
-    theme: 'ios',
-    themeVariant: 'light'
+document.addEventListener('DOMContentLoaded', function () {
+
+  const input = document.getElementById('countryInput');
+  const list = document.getElementById('countries');
+  const codeInput = document.getElementById('countryCode');
+
+    if (!API_KEY || API_KEY === 'INSERT_YOUR_KEY_HERE') {
+    console.warn('Set your Countrylayer API key in API_KEY.');
+    return;
+
+
+  }
+
+  fetch(`https://api.countrylayer.com/v2/all?access_key=${encodeURIComponent(API_KEY)}`)
+  .then(res => res.json())
+  .then(data => {
+
+      data
+      .sort((a, b) => (a.name || '').localeCompare(b.name || ''))
+      .forEach (c => {
+
+          if (!c.name) return; 
+          const opt = document.createElement('option');
+          opt.value = c.name;
+          opt.dataset.code = c.alpha2code || '';
+          list.appendChild(opt);
+
+      });
+  });
+
+  input.addEventListener('input', () => {
+
+    const val = input.value.trim();
+    const match = Array.from(list.options).find(o => o.value === val);
+    codeInput.value = match ? (match.dataset.code || '') : '';
+
+
+
+  });
 
 });
-
-var countryInst = mobiscroll.select('#demo-country-picker', 
-    {
-        display: 'anchored',
-        filter: true,
-        itemHeight: 40,
-        renderItem: function (item) {
-            return (
-                '<div class="md-country-picker-item">' +
-               '<img class="md-country-picker-flag" src="https://img.mobiscroll.com/demos/flags/' + 
-                item.data.value + 
-                '.png" />' + 
-                '</div>'
-            );
-        }
-    }
-);
-
-mobiscroll.getJson('https://trial.mobiscroll.com/content/countries.json', function (resp) {
-    var countries = [];
-    for (var i = 0; i < resp.length; ++i) {
-        var country = resp[i];
-        countries.push({ text: country.text, value: country.value });
-    }
-    countryInst.setOptions({ data: countries });
-
-});
-
-
