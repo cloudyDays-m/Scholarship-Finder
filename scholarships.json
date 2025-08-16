@@ -1,0 +1,102 @@
+[
+
+    {
+        "id": 1,
+        "title": "Engineering Excellence Scholarship",
+        "amount": "$5000",
+        "subjects": ["engineering"],
+        "countries": ["United States", "Canada", "United Kingdom"],
+        "reason": "study",
+        "description": "Merit-based scholarship for outstanding engineering students.",
+        "deadLine": "March 15, 2026",
+        "provider": "Engineering Foundation",
+        "url": "https://example.com/engineering-scholarship",
+        "requirements": ["3.5+ GPA", "Engineering major", " Significant Leadership Experiance"]
+    },
+
+    {
+        "id":2,
+        "title": "Global Arts Initiative Grant",
+        "amount": "$5,000",
+        "subjects": ["art"],
+        "countries": ["Argentina", "Columbia", "Canada"],
+        "reason": "study",
+        "description": "In order to support creative minds in fields such as arts, music and sports.",
+        "deadLine": "April, 30 2026",
+        "provider": "Creative Arts Foundation",
+        "url": "https://example.com/arts-scholarship",
+        "requirements": ["Portfolio Submission", "Arts/Sports/Music Majors"]
+    },
+
+    {
+        "id": 3,
+        "title": "STEM Research Fellowship",
+        "amount": "$10,000",
+        "subjects": ["maths", "engineering"],
+        "countries": ["United States", "Canada", "Germany", "Japan", "South Korea", "India"],         
+        "reason": "study",
+        "description": "Research-focused fellowship for mathematics and engineering students who are eager to get research experaince",
+        "deadline": "Febuary, 28 2026",
+        "provider": "The International STEM Council",
+        "url": "https://example.com/stem-fellowship",
+        "requirements": ["Research Proposal", "STEM Field", "Undergrad and Graduate level"]
+    },
+
+    {
+        "id": 4,
+        "title": "Future Doctors Scholarship",
+        "amount": "$5,000",
+        "subjects": ["medicine"],
+        "countries": ["United States", "Austrailia", "United Kingdom", "Iceland", "Norway", "Taiwan", "China"],         
+        "reason": "study",
+        "description": "Supporting aspiring medical professionals and clinicans since 1989",
+        "deadline": "January, 31 2026",
+        "provider": "Medical Education Council",
+        "url": "https://example.com/medical-scholarship",
+        "requirements": ["Pre-med or medical student", "3.7+ GPA", "Volunteer experiance at local medical institues"]
+    },
+
+    {
+        "id": 5,
+        "title": "Legal Scholars Program",
+        "amount": "$6,000",
+        "subjects": ["law"],
+        "countries": ["Canada", "Italy", "United Kingdom", "Ireland", "Scotland"],
+        "reason": "study",
+        "description": "Merit scholarship for law and social science students.",
+        "deadline": "May 15, 2025",
+        "provider": "Justice Education Fund",
+        "url": "https://example.com/law-scholarship",
+        "requirements": ["Law/Social Science major", "Essay required", "3.5+ GPA"]
+    },
+
+    {
+        "id": 6,
+        "title": "Teaching Excellence Award",
+        "amount": "$4,000",
+        "subjects": ["engineering", "maths", "law"],
+        "countries": [ "Canada", "Australia", "Nigeria", "Azerbaijan", "Ukraine", "Iran"],
+        "reason": "teaching",
+        "description": "For educators making a difference in STEM and Social Sciences.",
+        "deadline": "June 30, 2025",
+        "provider": "Educators United",
+        "url": "https://example.com/teaching-award",
+        "requirements": ["Teaching experience", "Education degree", "Recommendation letters"]
+    },
+
+    {
+        "id": 7,
+        "title": "International Student Excellence",
+        "amount": "$8,000",
+        "subjects": ["engineering", "art", "maths", "medicine", "law"],
+        "countries": ["India", "China", "Brazil", "Mexico", "Nigeria", "Pakistan"],
+        "reason": "study",
+        "description": "Supporting international students pursuing higher education.",
+        "deadline": "March 30, 2025",
+        "provider": "Global Education Initiative",
+        "url": "https://example.com/international-scholarship",
+        "requirements": ["International student", "Any major", "Financial need"]
+    }
+
+
+]
