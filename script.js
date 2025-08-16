@@ -1,3 +1,5 @@
+// API implementation
+
 const API_KEY = '6c2fb373e98ce077054f9bc9bceb7368'; 
 
 // Storing scholarshipdata which is loaded from the JSON file
@@ -30,8 +32,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 function initializeCountryPicker() {
   const input = document.getElementById('countryInput');
-  const input = document.getElementById('countries');
-  const input = document.getElementById('countryCode');
+  const list = document.getElementById('countries');
+  const codeInput = document.getElementById('countryCode');
 
     fetch(`https://api.countrylayer.com/v2/all?access_key=${encodeURIComponent(API_KEY)}`)
       .then(res => res.json())
@@ -130,23 +132,59 @@ function displayScholarships(scholarships, userCriteria){
 
   }
 
-  function createScholarshipCard(scholarship) {
+function createScholarshipCard(scholarship) {
+
     const card = document.createElement('div');
     card.className = 'scholarship-card';
     card.onclick = () => window.open(scholarship.url, '_blank');
 
+        card.innerHTML = `
+        <div class="card-header">
+            <h3>${scholarship.title}</h3>
+            <div class="amount">${scholarship.amount}</div>
+        </div>
+        <div class="card-body">
+            <p class="description">${scholarship.description}</p>
+            <div class="details">
+                <div class="detail-item"><strong>Provider:</strong> ${scholarship.provider}</div>
+                <div class="detail-item"><strong>Deadline:</strong> ${scholarship.deadline}</div>
+                <div class="requirements">
+                    <strong>Requirements:</strong>
+                    <ul>
+                        ${scholarship.requirements.map(req => `<li>${req}</li>`).join('')}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <button class="apply-btn">View Details & Apply</button>
+        </div>
+    `;
+    return card;
+}
 
-    card.innerHTML = `
+function formatSubject(subject){
 
-      <div class="card-header">
-      <h3> ${scholarship.title}</h3>
-      <div class="amount"> ${scholarship.amount}</div>
-      </div>
-      <div class="card-body"> 
-        <p class="description"<
+  const subjectMap = {
+    'engineering':'Engineering',
+    'art': 'Art, Music & Sports',
+    'math': 'Mathematics & Natural Sciences', 
+    'medicine':'Medicine', 
+    'law': 'Law & Social Sciences'
+  };
+  return subjectMap[subject] || subject;
+}
 
-      </div>
-
-    
-    `
+function closeResults() {
+  const overlay = document.querySelector('.results-overlay');
+  if (overlay) {
+    overlay.classList.add('fade-out');
+    setTimeout(() => overlay.remove(), 300)
   }
+}
+
+document.addEventListener('keydown', e =>{
+  if (e.key === 'Escape') {
+    closeResults();
+  }
+});
