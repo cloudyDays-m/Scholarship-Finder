@@ -6,3 +6,6 @@ I made this project as I wanted to make the process of looking for scholarships 
 
 
 ![scholarship-matcher](https://github.com/user-attachments/assets/d3f44933-8ba0-4cb8-b4a4-18bdb97a5f17)
+
+
+[![Athena Award Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Faward.athena.hackclub.com%2Fapi%2Fbadge)](https://award.athena.hackclub.com?utm_source=readme)
