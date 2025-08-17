@@ -8,7 +8,7 @@
         "countries": ["United States", "Canada", "United Kingdom"],
         "reason": "study",
         "description": "Merit-based scholarship for outstanding engineering students.",
-        "deadLine": "March 15, 2026",
+        "deadline": "March 15, 2026",
         "provider": "Engineering Foundation",
         "url": "https://example.com/engineering-scholarship",
         "requirements": ["3.5+ GPA", "Engineering major", " Significant Leadership Experiance"]
@@ -22,7 +22,7 @@
         "countries": ["Argentina", "Columbia", "Canada"],
         "reason": "study",
         "description": "In order to support creative minds in fields such as arts, music and sports.",
-        "deadLine": "April, 30 2026",
+        "deadline": "April 30, 2026",
         "provider": "Creative Arts Foundation",
         "url": "https://example.com/arts-scholarship",
         "requirements": ["Portfolio Submission", "Arts/Sports/Music Majors"]
@@ -36,7 +36,7 @@
         "countries": ["United States", "Canada", "Germany", "Japan", "South Korea", "India"],         
         "reason": "study",
         "description": "Research-focused fellowship for mathematics and engineering students who are eager to get research experaince",
-        "deadline": "Febuary, 28 2026",
+        "deadline": "February 28, 2026",
         "provider": "The International STEM Council",
         "url": "https://example.com/stem-fellowship",
         "requirements": ["Research Proposal", "STEM Field", "Undergrad and Graduate level"]

@@ -158,7 +158,7 @@ function formatSubject(subject){
   const subjectMap = {
     'engineering': 'Engineering',
     'art': 'Art, Music & Sports',
-    'math': 'Mathematics & Natural Sciences', 
+    'maths': 'Mathematics & Natural Sciences', 
     'medicine': 'Medicine', 
     'law': 'Law & Social Sciences'
   };
