@@ -53,7 +53,7 @@ function initializeCountryPicker() {
     }); 
 }
 
-// the following function processes user inputted answers and then matches the scholarships from the (database) JSON file 
+// the following function processes user input answers and then matches the scholarships from the (database) JSON file 
 
 function submitAnswers() {
   if (scholarshipDatabase.length === 0){

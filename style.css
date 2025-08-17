@@ -358,4 +358,72 @@ body {
     margin-top: 10px;
 }
 
-.requirements.ul 
+.requirements.ul {
+    margin: 5p 0 0 0; 
+    padding-left: 20px;
+}
+
+.requirements li {
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 3px;
+}
+
+.card footer {
+    padding: 15p 20px;
+    background-color: #f8f9fa;
+    border-top: 1px solid #e9ecef;
+}
+
+.apply-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.apply-btn:hover{
+    background-color: #555;
+}
+
+.no-results {
+    grid-column: 1/-1;
+    text-align: center;
+    padding: 60px 20px;
+    color: #666;
+}
+
+.no-results h3 {
+    font-size:1.8rem;
+    color:#333;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    .criteria-summary {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .scholarships-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .results-header h2 {
+        font-size: 2rem;
+    }
+    .close-results{
+        top: 10px;
+        right:10px;
+    }
+}
